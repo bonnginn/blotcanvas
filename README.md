@@ -2,7 +2,10 @@
 
 Western blot画像から、論文・学会発表用のFigureと元画像記録を作成するための、日本語のブラウザアプリです。
 
-**公開版：<https://bonnginn.github.io/blotcanvas/>**
+**公開ベータ版：<https://bonnginn.github.io/blotcanvas/>**
+
+> [!IMPORTANT]
+> 現在の公開版はベータ版です。実際の研究データで検証を進めている段階であり、機能、操作方法、プロジェクトJSONの保存形式は今後変更される可能性があります。元画像と重要な作業結果は、必ず本アプリとは別に保管してください。
 
 ## 特徴
 

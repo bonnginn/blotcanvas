@@ -1,5 +1,11 @@
 # BlotCanvas
 
+BlotCanvas is a free, local-first browser application for preparing Western blot figures, source records, and preliminary rectangular-ROI quantification.
+
+[**Open BlotCanvas**](https://bonnginn.github.io/blotcanvas/?lang=en) · [**Read the manual**](https://bonnginn.github.io/blotcanvas/manual-en.html)
+
+![BlotCanvas workflow: import Western blot images, crop blots, place molecular-weight markers, edit lane labels, and export a figure](demo/blotcanvas-demo.gif)
+
 BlotCanvas is a local-first browser application for preparing Western blot figures, source records, and preliminary quantification.
 
 **Public beta:** <https://bonnginn.github.io/blotcanvas/?lang=en>

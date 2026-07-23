@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If BlotCanvas contributes to your work, please cite this software and specify the version used."
+title: "BlotCanvas"
+type: software
+authors:
+  - family-names: "Inaba"
+    given-names: "Hironori"
+version: "0.2.13-beta.1"
+date-released: "2026-07-23"
+url: "https://bonnginn.github.io/blotcanvas/"
+repository-code: "https://github.com/bonnginn/blotcanvas"
+license: MIT
+keywords:
+  - Western blot
+  - figure preparation
+  - image analysis
+  - quantification
+  - research software
+abstract: "A local-first browser application for Western blot figure preparation, source-record generation, and preliminary rectangular-ROI quantification."

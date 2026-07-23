@@ -40,6 +40,8 @@ Image import, adjustment, cropping, Figure creation, and quantification run in t
 
 Use the bilingual “Report a problem or suggestion” form in the application. Do not include patient information, confidential data, unpublished images, or other information unnecessary for the report.
 
+BlotCanvas is created and improved with OpenAI Codex as a development tool. The developer reviews submitted reports and may provide the report text to Codex to organize the problem, investigate possible causes, and prepare implementation options. Requests are not implemented automatically; the developer decides their necessity, scientific validity, priority, and impact on existing workflows.
+
 ## License
 
 BlotCanvas is available under the [MIT License](./LICENSE). Copyright © Hironori Inaba.

@@ -2,6 +2,13 @@
 
 このファイルには、公開版における主な変更を記録します。
 
+## 0.2.8-beta.1 — 2026-07-23
+
+### English UI
+
+- Translated the full expanded “Data handling” notice
+- Clarified local image processing, anonymous Cloudflare page-view analytics, download behavior, and browser compatibility in English
+
 ## 0.2.7-beta.1 — 2026-07-23
 
 ### 繰り返し条件

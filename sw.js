@@ -1,4 +1,4 @@
-const CACHE = "blotcanvas-app-v11";
+const CACHE = "blotcanvas-app-v12";
 const BASE = self.registration.scope;
 const APP_FILES = [
   "./",

@@ -2,6 +2,21 @@
 
 このファイルには、公開版における主な変更を記録します。
 
+## 0.2.6-beta.1 — 2026-07-23
+
+### English beta
+
+- Added an English application at `?lang=en` while retaining the Japanese interface
+- Added an English user guide and English README
+- Updated the feedback form with bilingual Japanese/English titles, questions, choices, and data-sharing guidance
+
+### 長い条件ラベル
+
+- レーン幅と文字幅を比較し、1行・2段・90度回転を自動選択
+- 2段表示では空白や記号など意味の切れ目に近い位置を優先して改行
+- 長いラベルに応じて条件欄の高さを自動確保し、隣接ラベルとの衝突を回避
+- Figureプレビュー、SVG、編集可能PDF、画像書き出しへ共通適用
+
 ## 0.2.5-beta.1 — 2026-07-23
 
 ### 出力サイズ

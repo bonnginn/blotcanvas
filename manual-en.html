@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BlotCanvas Beta — User guide</title>
+  <style>
+    :root{font-family:Helvetica,Arial,sans-serif;color:#17211e;background:#f3f6f5}*{box-sizing:border-box}body{margin:0}header{background:#183f35;color:#fff;padding:28px 6vw}header h1{margin:0 0 8px;font-size:30px}header p{margin:0;color:#d9ece6}.wrap{max-width:980px;margin:auto;padding:28px 20px 60px}nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}nav a,.lang{padding:8px 11px;border:1px solid #a8bbb5;border-radius:7px;background:#fff;color:#174f40;text-decoration:none;font-weight:700}section{margin:16px 0;padding:22px 24px;background:#fff;border:1px solid #d8e1de;border-radius:12px;box-shadow:0 4px 16px #183f350a}h2{margin-top:0;color:#174f40;font-size:21px}li{margin:7px 0;line-height:1.55}.note{padding:12px 14px;border-left:4px solid #d38c2d;background:#fff7e9}.small{color:#53645f;font-size:14px;line-height:1.55}code{background:#edf2f0;padding:2px 5px;border-radius:4px}@media(max-width:640px){header{padding:22px 18px}.wrap{padding:18px 12px}section{padding:18px}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BlotCanvas Beta — Getting started</h1>
+    <p>Prepare editable Western blot figures, source records, and preliminary quantification locally in your browser.</p>
+  </header>
+  <div class="wrap">
+    <p><a class="lang" href="./manual.html">日本語マニュアル</a> <a class="lang" href="./?lang=en">Open English app</a></p>
+    <nav>
+      <a href="#s1">1 Import</a><a href="#s2">2 Rotation</a><a href="#s3">3 Regions</a>
+      <a href="#s4">4 Display</a><a href="#s5">5 Markers</a><a href="#s6">6 Labels</a>
+      <a href="#s7">7 Export</a><a href="#s8">8 Quantification</a><a href="#s9">9 Graphs</a>
+    </nav>
+
+    <section>
+      <h2>Before you start</h2>
+      <ul>
+        <li>Keep an independent copy of every original acquisition file.</li>
+        <li>Use the latest Chrome or Edge. Safari support is being tested.</li>
+        <li>Save a project JSON periodically so the workflow can be resumed.</li>
+        <li>Figure display adjustments and quantitative measurements are separate. Quantification uses the original signal image.</li>
+      </ul>
+      <p class="note">BlotCanvas is beta software. Validate measurements against ImageJ or another established workflow before using results in a publication.</p>
+    </section>
+
+    <section id="s1">
+      <h2>1. Import acquisition files</h2>
+      <p>Choose the imaging system, then select a folder or individual image files. ATTO LuminoGraph files are grouped from the CL, Merge, and M naming pattern. For other systems, assign the signal, Merge, and marker/bright-field roles manually.</p>
+      <p>If the instrument does not create a Merge image, BlotCanvas can generate a working Merge from a signal image and a bright-field/marker image of identical pixel dimensions. The original files remain unchanged.</p>
+    </section>
+
+    <section id="s2">
+      <h2>2. Correct rotation</h2>
+      <p>For each image set and gel, click one marker band to place a horizontal guide. Adjust the angle until the marker band is parallel to the guide. Rotation remains independent for each gel.</p>
+    </section>
+
+    <section id="s3">
+      <h2>3. Define blot regions</h2>
+      <p>Create one region for each gel and antibody. Width is synchronized among regions assigned to the same gel; height is synchronized among regions assigned to the same antibody. Region position remains independent.</p>
+      <p>With multiple gels and antibodies, new regions are proposed in this order: Gel 1/antibody 1, Gel 2/antibody 1, Gel 1/antibody 2, Gel 2/antibody 2. Both gel and antibody assignments can be changed.</p>
+    </section>
+
+    <section id="s4">
+      <h2>4. Adjust the Figure display</h2>
+      <p>Invert the image and adjust brightness or contrast for presentation. Use the same settings for images probed with the same antibody when they are intended for direct comparison.</p>
+      <p class="small">These controls affect Figure appearance only. Quantitative measurements use the unadjusted original signal pixels.</p>
+    </section>
+
+    <section id="s5">
+      <h2>5. Place molecular-weight markers</h2>
+      <p>Select the marker product and the molecular weights visible on each membrane. Click the corresponding bands on the full marker or Merge image from top to bottom. Marker presets can be registered and are stored in the browser.</p>
+    </section>
+
+    <section id="s6">
+      <h2>6. Create lane labels</h2>
+      <p>Set the lane count and choose a simple, repeated, hierarchical, or +/− template. Every generated label remains editable. Long labels are automatically kept on one line, wrapped onto two lines, or rotated by 90° according to available lane width.</p>
+    </section>
+
+    <section id="s7">
+      <h2>7. Arrange and export</h2>
+      <ul>
+        <li><b>Editable PDF:</b> embedded blot images with editable text, lines, and frames for Illustrator.</li>
+        <li><b>Editable SVG:</b> a self-contained alternative whose Illustrator compatibility may vary.</li>
+        <li><b>PNG, TIFF, JPEG, PDF:</b> self-contained final images.</li>
+        <li><b>Source record:</b> original signal and/or Merge images with crop regions.</li>
+        <li><b>Project JSON:</b> restores the working project later.</li>
+      </ul>
+      <p>Select a physical placement width of 25.5, 39, or 54 mm for the editable PDF and graph outputs.</p>
+    </section>
+
+    <section id="s8">
+      <h2>8. Preliminary quantification</h2>
+      <p>Select a gel and blot, place one rectangular ROI over each lane’s band, and place a background ROI over an area without bands or artifacts. A loading control from the same gel can be selected for normalization.</p>
+      <p class="note">The current implementation is an initial rectangular-ROI method. Lane profiles, baseline selection, and peak integration are planned.</p>
+    </section>
+
+    <section id="s9">
+      <h2>9. Graph and save results</h2>
+      <p>Lane labels provide the graph categories. Adjust the graph type, title, font, size, and fixed color palette, then export a transparent PNG or measurement CSV. Results for the same antibody across multiple gels can be combined into one PNG.</p>
+      <p class="small">Statistical analysis and aggregation of independent biological replicates are not yet implemented.</p>
+    </section>
+  </div>
+</body>
+</html>

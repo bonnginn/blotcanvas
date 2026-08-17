@@ -5,8 +5,8 @@ type: software
 authors:
   - family-names: "Inaba"
     given-names: "Hironori"
-version: "0.2.14-beta.1"
-date-released: "2026-07-26"
+version: "0.2.16-beta.1"
+date-released: "2026-08-17"
 url: "https://bonnginn.github.io/blotcanvas/"
 repository-code: "https://github.com/bonnginn/blotcanvas"
 license: MIT

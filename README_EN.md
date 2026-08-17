@@ -27,7 +27,7 @@ BlotCanvas is a local-first browser application for preparing Western blot figur
 - Simple, repeated, hierarchical, and +/− lane-label layouts
 - Automatic one-line, two-line, or rotated display for long lane labels
 - High-resolution PNG, JPEG, TIFF, PDF, editable PDF, and SVG export
-- Signal/Merge source records and resumable project JSON files
+- Signal/Merge source records and lightweight resumable project JSON files that reference source images instead of embedding them
 - Initial rectangular-ROI quantification using original 16-bit pixels, background correction, normalization, graphs, and CSV export
 
 ## Important limitations
@@ -40,7 +40,7 @@ The latest Google Chrome is recommended. Microsoft Edge is also supported. Safar
 
 ## Data handling
 
-Image import, adjustment, cropping, Figure creation, and quantification run in the browser. BlotCanvas does not upload or store experimental images on its server. The public site uses cookie-free Cloudflare Web Analytics for anonymous page-view statistics; images, project contents, and experimental labels are not included.
+Image import, adjustment, cropping, Figure creation, and quantification run in the browser. BlotCanvas does not upload or store experimental images on its server. Project JSON files store image names, relative paths, and processing settings without embedding image data. To resume, open the JSON and then choose the folder containing the source images. Browser security requires this folder-selection step even when the JSON is stored beside the images. The public site uses cookie-free Cloudflare Web Analytics for anonymous page-view statistics; images, project contents, and experimental labels are not included.
 
 ## Feedback
 

@@ -29,7 +29,7 @@
       <ul>
         <li>Keep an independent copy of every original acquisition file.</li>
         <li>Use the latest Chrome or Edge. Safari support is being tested.</li>
-        <li>Save a project JSON periodically so the workflow can be resumed.</li>
+        <li>Save a lightweight project JSON periodically and keep it with the source-image folder.</li>
         <li>Figure display adjustments and quantitative measurements are separate. Quantification uses the original signal image.</li>
       </ul>
       <p class="note">BlotCanvas is beta software. Validate measurements against ImageJ or another established workflow before using results in a publication.</p>
@@ -82,9 +82,9 @@
         <li><b>Editable SVG:</b> a self-contained alternative whose Illustrator compatibility may vary.</li>
         <li><b>PNG, TIFF, JPEG, PDF:</b> self-contained final images.</li>
         <li><b>Source record:</b> original signal and/or Merge images with crop regions.</li>
-        <li><b>Project JSON:</b> restores the working project later.</li>
+        <li><b>Project JSON:</b> a lightweight file containing image references and processing settings, without embedded image data. Open the JSON and then choose the source-image folder to relink.</li>
       </ul>
-      <p>Select a physical placement width of 25.5, 39, or 54 mm for the editable PDF and graph outputs.</p>
+      <p>Select a physical placement width of 25.5, 39, or 54 mm for the editable PDF and graph outputs. Browser security requires choosing the source folder during restoration even when the JSON is stored beside the images.</p>
     </section>
 
     <section id="s8">

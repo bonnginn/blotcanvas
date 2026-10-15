@@ -1,0 +1,42 @@
+{
+  "basePublicCommit": "ee7d206",
+  "oldName": "index-figure-6a03436dc6cb.js",
+  "newName": "index-safari-save-b65c83b0e71c.js",
+  "sha256": "b65c83b0e71c457e8c9c82313b2504e8affb18298b867399f5eb8e842118122b",
+  "otherJavaScriptUnchanged": true,
+  "publishedHelpersExecuted": true,
+  "cssUnchanged": true,
+  "safariRealDevice": "not tested",
+  "files": [
+    "index.html",
+    "sw.js",
+    "assets/index-safari-save-b65c83b0e71c.js"
+  ],
+  "deployedCommit": "b5ad224cc786a0026984c3c22cdcd4f1dd4bd923",
+  "liveVerification": {
+    "checkedAt": "2026-09-18T04:28:29.839Z",
+    "results": {
+      "index.html": {
+        "status": 200,
+        "match": true,
+        "sha256": "f183d56df1251100a8784a1d47f3f6e1e6da07c1a5852f2b045408e9d5e3d2c4"
+      },
+      "sw.js": {
+        "status": 200,
+        "match": true,
+        "sha256": "cb49ab1252e3e68b4ced3ae6777024d69f7d1b98d94d9826e74a1295bf8070c8"
+      },
+      "assets/index-safari-save-b65c83b0e71c.js": {
+        "status": 200,
+        "match": true,
+        "sha256": "b65c83b0e71c457e8c9c82313b2504e8affb18298b867399f5eb8e842118122b"
+      },
+      "assets/index-figure-52b19cf0902c.css": {
+        "status": 200,
+        "match": true,
+        "sha256": "17a8a1189d6c02712efad49e9d55ac50da5d07b335df1d694f66c1005daf18b8"
+      }
+    },
+    "allMatch": true
+  }
+}

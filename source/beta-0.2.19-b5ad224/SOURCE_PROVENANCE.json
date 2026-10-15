@@ -1,0 +1,681 @@
+{
+  "status": "STAGED; fresh source-to-release build and public deploy checks remain pending",
+  "publishedAppCommit": "b5ad224cc786a0026984c3c22cdcd4f1dd4bd923",
+  "publishedAppTree": "4810d210d6cd7b1b466a918acbcf7d34640da5f1",
+  "developmentSourceCommit": "47fd77e7e0eedab07e0a6015ee77fb228c4ef78c",
+  "developmentSourceTree": "3f51fedb234ec0f72c4a358af46424d79d2b26e8",
+  "preSafariFigureSourceCommit": "5ce73299bacc22f2c262120d2a64ac833934008b",
+  "preSafariFigureSourceTree": "edea74e416cab45c69bcea0ce1c3426890304a5e",
+  "scope": "Only historical beta 0.2.19 source and source/compiled Safari save fix; no private Ver.1/refactor source.",
+  "sourceFileCount": 75,
+  "canonicalSourceBytesUnchanged": true,
+  "excludedSourceMetadata": {
+    "SOURCE_BASELINE.json": "Historical metadata contains a private absolute source path; not a build/test input.",
+    "package-lock.json": "Historical npm lock omits manifest dependencies (@pdf-lib/fontkit, jszip, pdf-lib); use exact pnpm lock."
+  },
+  "lock": {
+    "path": "development/pnpm-lock.yaml",
+    "sha256": "2a24364859b11e691e2eda37b4d30a254840036a136b81455e82bff0ab643d0c",
+    "allManifestSpecifiersMatchImporter": true,
+    "importer": {
+      "dependencies": {
+        "@pdf-lib/fontkit": {
+          "specifier": "^1.1.1",
+          "version": "1.1.1"
+        },
+        "drizzle-orm": {
+          "specifier": "0.45.2",
+          "version": "0.45.2"
+        },
+        "jszip": {
+          "specifier": "3.10.1",
+          "version": "3.10.1"
+        },
+        "next": {
+          "specifier": "16.2.6",
+          "version": "16.2.6(@babel/core@7.29.7)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)"
+        },
+        "pdf-lib": {
+          "specifier": "^1.17.1",
+          "version": "1.17.1"
+        },
+        "react": {
+          "specifier": "19.2.6",
+          "version": "19.2.6"
+        },
+        "react-dom": {
+          "specifier": "19.2.6",
+          "version": "19.2.6(react@19.2.6)"
+        }
+      },
+      "devDependencies": {
+        "@cloudflare/vite-plugin": {
+          "specifier": "1.37.1",
+          "version": "1.37.1(vite@8.0.13(@types/node@22.19.19)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1))(workerd@1.20260515.1)(wrangler@4.92.0)"
+        },
+        "@tailwindcss/postcss": {
+          "specifier": "4.2.1",
+          "version": "4.2.1"
+        },
+        "@types/node": {
+          "specifier": "22.19.19",
+          "version": "22.19.19"
+        },
+        "@types/react": {
+          "specifier": "19.2.14",
+          "version": "19.2.14"
+        },
+        "@types/react-dom": {
+          "specifier": "19.2.3",
+          "version": "19.2.3(@types/react@19.2.14)"
+        },
+        "@vitejs/plugin-react": {
+          "specifier": "6.0.2",
+          "version": "6.0.2(vite@8.0.13(@types/node@22.19.19)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1))"
+        },
+        "@vitejs/plugin-rsc": {
+          "specifier": "0.5.26",
+          "version": "0.5.26(react-dom@19.2.6(react@19.2.6))(react-server-dom-webpack@19.2.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(webpack@5.108.4(esbuild@0.28.1)))(react@19.2.6)(vite@8.0.13(@types/node@22.19.19)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1))"
+        },
+        "drizzle-kit": {
+          "specifier": "0.31.10",
+          "version": "0.31.10"
+        },
+        "eslint": {
+          "specifier": "9.39.4",
+          "version": "9.39.4(jiti@2.7.0)"
+        },
+        "eslint-config-next": {
+          "specifier": "16.2.6",
+          "version": "16.2.6(@typescript-eslint/parser@8.64.0(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)"
+        },
+        "react-server-dom-webpack": {
+          "specifier": "19.2.6",
+          "version": "19.2.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(webpack@5.108.4(esbuild@0.28.1))"
+        },
+        "tailwindcss": {
+          "specifier": "4.2.1",
+          "version": "4.2.1"
+        },
+        "typescript": {
+          "specifier": "5.9.3",
+          "version": "5.9.3"
+        },
+        "vinext": {
+          "specifier": "0.0.50",
+          "version": "0.0.50(@vitejs/plugin-react@6.0.2(vite@8.0.13(@types/node@22.19.19)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)))(@vitejs/plugin-rsc@0.5.26(react-dom@19.2.6(react@19.2.6))(react-server-dom-webpack@19.2.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(webpack@5.108.4(esbuild@0.28.1)))(react@19.2.6)(vite@8.0.13(@types/node@22.19.19)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)))(next@16.2.6(@babel/core@7.29.7)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(react-dom@19.2.6(react@19.2.6))(react-server-dom-webpack@19.2.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(webpack@5.108.4(esbuild@0.28.1)))(react@19.2.6)(typescript@5.9.3)(vite@8.0.13(@types/node@22.19.19)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1))"
+        },
+        "vite": {
+          "specifier": "8.0.13",
+          "version": "8.0.13(@types/node@22.19.19)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0)(tsx@4.23.1)"
+        },
+        "wrangler": {
+          "specifier": "4.92.0",
+          "version": "4.92.0"
+        }
+      }
+    }
+  },
+  "sourceFixPatchSha256": "d327ae2cef31897da7d900fd8878143254a2c2e1d50e2ea1b9111114fb9fd610",
+  "compiledSavePostprocess": {
+    "inputSHA256": "6a03436dc6cb632f13757399ccafd86b6bc2e9a61ea82bf22b7cc5518536c72a",
+    "outputSHA256": "b65c83b0e71c457e8c9c82313b2504e8affb18298b867399f5eb8e842118122b",
+    "outputBytes": 408979,
+    "reconstructedExactPublicBytes": true,
+    "scriptSha256": "a41e3929b149b06f3546dffc9aa6ca7cf591e09501a844c03cae9f0e4165fa4b"
+  },
+  "sourceTests": {
+    "nodeVersion": "24.19.0",
+    "passed": 42
+  },
+  "sourceAndPublicCompiledDownloadMockCases": 8,
+  "originalHistoricalPatchScriptRecovered": true,
+  "originalHistoricalVerificationRecordRecovered": true,
+  "newReferencePostprocessReconstructed": true,
+  "freshLockedInstallBuild": "not performed; shared build slot and exact old dependency install required",
+  "publicWrites": [],
+  "sourceFiles": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "gitBlob": "d9c421f7433000103017ccf62db5bd28573d39ec",
+      "bytes": 62,
+      "sha256": "d5c5ded42dd94c0c05afddfa63f3b5e9145a385bbcaf066cd16e41e8c430bd22"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "gitBlob": "47cc0f9daeb894bacbebdfcc1f92a145d254b653",
+      "bytes": 18370,
+      "sha256": "fe32d563a0b9f0fd5c5879f20cf9214f4ccbead81efdd75b322c0ff9de4ba6fc"
+    },
+    {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "gitBlob": "cdf8890784123574fac68a27b28df27c291871a3",
+      "bytes": 661,
+      "sha256": "4408bfa52ebdb40348830799ce5832e8c3f62fc03426706d4ae73f3a03e2c439"
+    },
+    {
+      "path": "FIGURE_ONLY_RELEASE.md",
+      "mode": "100644",
+      "gitBlob": "9c5e8d787e0ce4c70e67e34c0413f7aad392a959",
+      "bytes": 2325,
+      "sha256": "6a076416bd7830813cdab327c20dbe95367846572d9545ce5a2abb79656e84a4"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "gitBlob": "d297f0beb2297ce0752874aa8a30f085225f04aa",
+      "bytes": 1071,
+      "sha256": "2210282d9014905844e374e560fefb78c29719cf53cd9ae357e408e4d9e9a2f5"
+    },
+    {
+      "path": "PUBLIC_RELEASE.md",
+      "mode": "100644",
+      "gitBlob": "ec910351628c1c781ef36160e398828d95ea7b25",
+      "bytes": 1182,
+      "sha256": "779d50cd51d790aacdfb572c9f45241f211c9fdbb771a63bbc2f3f4b7f670df8"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "gitBlob": "55396d47f971ee67c4de26fea2d8df5b41fc54d0",
+      "bytes": 9526,
+      "sha256": "4d14bd40f5839d3b7dadecee7566295a7aad1835b1760ee99fbd6e9fed6743cf"
+    },
+    {
+      "path": "README_EN.md",
+      "mode": "100644",
+      "gitBlob": "0e41b407d4c4b86c7e20430886f7b75484048f05",
+      "bytes": 3806,
+      "sha256": "19070357610a2a1c06d2ffed3760e9f2610861e59c90dc54ce1a3c6dde53b6d8"
+    },
+    {
+      "path": "RELEASE_CHECKLIST.md",
+      "mode": "100644",
+      "gitBlob": "0c90e1b32f0a721f2b053026ea8ce9af961b03aa",
+      "bytes": 1623,
+      "sha256": "55001adb004033f6e884289218306a13a0708f4b42b762fddb4028e777e5c53d"
+    },
+    {
+      "path": "ROADMAP.md",
+      "mode": "100644",
+      "gitBlob": "f2aec0505c23632b1ce15099dd8b9112344ec1dc",
+      "bytes": 1514,
+      "sha256": "42818731d7dda60806deddc4dbe8618aa02bf6831690c1ca011b434ea213f261"
+    },
+    {
+      "path": "TESTING.md",
+      "mode": "100644",
+      "gitBlob": "d44ccc53ef44e305b2bb252d20c671ea5e765781",
+      "bytes": 1557,
+      "sha256": "c422a83aed3e0d89dade949c741cdea245aa1a44bc7dde4492cfea08b2d45930"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "mode": "100644",
+      "gitBlob": "98743f9e318f1527d5206629c04e340e6f8e0247",
+      "bytes": 1293,
+      "sha256": "79958f73c414cdc0869a4d93a9383238f20f1232a10f62362e24b8a9a545d442"
+    },
+    {
+      "path": "app/chatgpt-auth.ts",
+      "mode": "100644",
+      "gitBlob": "8d1fb3534463fb53fc0ff10ce6d5eccebf5964fa",
+      "bytes": 2404,
+      "sha256": "17a965f8948b21510cdf8ecbd70c5fdf58100e10970463f6a8fd2cc4795f8044"
+    },
+    {
+      "path": "app/condition-grid.ts",
+      "mode": "100644",
+      "gitBlob": "76fb362520d27348cddb72839cec87be84355a52",
+      "bytes": 6949,
+      "sha256": "6e3da5497c49ec0df5b459c035f498fa2eb25d765ba8e89854e81fb6702feb53"
+    },
+    {
+      "path": "app/display-adjustment.ts",
+      "mode": "100644",
+      "gitBlob": "caa919521bc1d99907b02ecbf68c50423eaa7b42",
+      "bytes": 2248,
+      "sha256": "8c8bb1ab445aa444576830a1cca4b628a8c21ce0db3c31252693f7073364efcf"
+    },
+    {
+      "path": "app/download-blob.ts",
+      "mode": "100644",
+      "gitBlob": "4879a861e9f2751e9fc7ccc0b85429d79f447452",
+      "bytes": 663,
+      "sha256": "37f5ea874464d1838808a147c69df701891654d2b0d4ed41fc1ae62deef8ca51"
+    },
+    {
+      "path": "app/figure-layout.ts",
+      "mode": "100644",
+      "gitBlob": "a6dd69b5759938f80ee787cc21d6017560b6481c",
+      "bytes": 2278,
+      "sha256": "20d9589d9ef8fb173fe7e0f06d776260232da05f9a94a2d1f2de1a9d7b749dd0"
+    },
+    {
+      "path": "app/gel-geometry.ts",
+      "mode": "100644",
+      "gitBlob": "5fe6adcc8016d7ce8bc6b7eefcdf7b237f463c72",
+      "bytes": 2172,
+      "sha256": "6dd695b3d4795a43f8024e716da41f5fab32c62ead141b17fddea1cc4de8b07c"
+    },
+    {
+      "path": "app/globals.css",
+      "mode": "100644",
+      "gitBlob": "b00f1306b1efb86a8dd04ce95078238ed6416a35",
+      "bytes": 64798,
+      "sha256": "11737c61b9787ab53efa0b37a3ff547a665bd0fcb1c07d3aaf5f1a7746dce46b"
+    },
+    {
+      "path": "app/i18n.ts",
+      "mode": "100644",
+      "gitBlob": "a47b067d9d75927aec9a061dd818bdcb13b2c3ce",
+      "bytes": 31781,
+      "sha256": "d727bdc3a85045d4c980dc12741779027c5a581aab3f37ef2e5ab4d7e933ce7c"
+    },
+    {
+      "path": "app/label-layout.ts",
+      "mode": "100644",
+      "gitBlob": "5481a24927e4bb4cfd0abd806e4876ec3a989eef",
+      "bytes": 3026,
+      "sha256": "e560982507ca680b176c7cddcc1e4a6a889507e1af24a47410ecb9c04310bbf0"
+    },
+    {
+      "path": "app/layout.tsx",
+      "mode": "100644",
+      "gitBlob": "3886a022c6b8a624b329f10458aaa9654e65a66e",
+      "bytes": 1763,
+      "sha256": "0de4f18f3dff92b30065d43504c007e8b091242bd0dd46b8fdd537a8c33edebc"
+    },
+    {
+      "path": "app/page.tsx",
+      "mode": "100644",
+      "gitBlob": "3968f1edcb88075cacc338929410d8d675f9c501",
+      "bytes": 386514,
+      "sha256": "e7788859393e972427f1da3bbdc0a0551798f65da8149e8a76575ae62c87141a"
+    },
+    {
+      "path": "app/project-storage.ts",
+      "mode": "100644",
+      "gitBlob": "853fb81e43c7fba04358f1e9bf8f7c1035b72e98",
+      "bytes": 3792,
+      "sha256": "ceb4c08a75c2e9522234d1adcfb34f526bb882fab8052e28739db8e28af5c1ed"
+    },
+    {
+      "path": "app/region-order.ts",
+      "mode": "100644",
+      "gitBlob": "9dc0520514a77808707d1eafcc395684edf622cd",
+      "bytes": 2014,
+      "sha256": "a90abf64e0ecfac097b4e41a36b218e859767a72a87c1ec4e831d8591d06855c"
+    },
+    {
+      "path": "build/sites-vite-plugin.ts",
+      "mode": "100644",
+      "gitBlob": "26563fdd77ff1027eeb08917d15d733da79a560a",
+      "bytes": 1254,
+      "sha256": "81b7cbfaeb970611572256aba0e313425beb3809f6426f63750696c15d9c756b"
+    },
+    {
+      "path": "db/index.ts",
+      "mode": "100644",
+      "gitBlob": "19b379900d94124b674f07ffe2dbba8f70bd8d6d",
+      "bytes": 423,
+      "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd"
+    },
+    {
+      "path": "db/schema.ts",
+      "mode": "100644",
+      "gitBlob": "d2dd83cd250ecaa6ac022559fc9640271f2b2dd5",
+      "bytes": 169,
+      "sha256": "13ddacbf0be50e054d450a6c642b7fdc1aa943fd6b99084711e07e58b600390d"
+    },
+    {
+      "path": "docs/ROADMAP_JA.md",
+      "mode": "100644",
+      "gitBlob": "751c07df24311fd5ec48c3da6007c53a943ed995",
+      "bytes": 3619,
+      "sha256": "da607ab0649741313cf8c7eeb6e0df11db4cbefe02d03a5274fc6bba3a1c3bc1"
+    },
+    {
+      "path": "docs/USER_GUIDE_JA.md",
+      "mode": "100644",
+      "gitBlob": "593fa737dc72617684635b0bce25166369100a5c",
+      "bytes": 6262,
+      "sha256": "f480023989478fcc154e2fcd1b391c8118527d723f10f9b5f9b19ee5b9546945"
+    },
+    {
+      "path": "drizzle.config.ts",
+      "mode": "100644",
+      "gitBlob": "c2b2f34376984744343453838ce66658ad9d9b6a",
+      "bytes": 148,
+      "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b"
+    },
+    {
+      "path": "drizzle/meta/_journal.json",
+      "mode": "100644",
+      "gitBlob": "4377507400414768c5915808bf080a1403cf6cb3",
+      "bytes": 61,
+      "sha256": "90cb374e093894d0efce6f1830d873a42aadd8ba49d2f024495e5cb2e1c8c303"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "mode": "100644",
+      "gitBlob": "05e726d1b4201bc8c7716d2b058279676582e8c0",
+      "bytes": 465,
+      "sha256": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493"
+    },
+    {
+      "path": "examples/d1/app/api/notes/route.ts",
+      "mode": "100644",
+      "gitBlob": "07f8318c3c290d68163e95aa3e170ad92a235f27",
+      "bytes": 1700,
+      "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909"
+    },
+    {
+      "path": "examples/d1/db/schema.ts",
+      "mode": "100644",
+      "gitBlob": "7bb0c157110799b9b53c767517e0d192b7201f2e",
+      "bytes": 370,
+      "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454"
+    },
+    {
+      "path": "github-pages/index.html",
+      "mode": "100644",
+      "gitBlob": "75c3405b2d92f3dd01cd57fd81784f2c71f844f7",
+      "bytes": 1979,
+      "sha256": "d4b54148a2040b4afbe66d98be4107ef5910cf5c904159209b5088371e4750d1"
+    },
+    {
+      "path": "github-pages/main.tsx",
+      "mode": "100644",
+      "gitBlob": "b0ebab965b1b9613dfb0cd93bd2f872f92d88d49",
+      "bytes": 249,
+      "sha256": "350af876cb33a8cc0c126597d6dd02448cc778f03c47d0b37e09a93b056fc8a8"
+    },
+    {
+      "path": "next.config.ts",
+      "mode": "100644",
+      "gitBlob": "e9ffa3083ad279ecf95fd8eae59cb253e9a539c4",
+      "bytes": 133,
+      "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "gitBlob": "f039964207e501df02e65689a928a686b16e311a",
+      "bytes": 1399,
+      "sha256": "4e45c89cced60f41344f7151b94f287360ef0c3270e7f07a100bcf2f1f04db3c"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "mode": "100644",
+      "gitBlob": "c10cb60b4c5f70b7a68421db1de10d0875a19bf1",
+      "bytes": 229914,
+      "sha256": "2a24364859b11e691e2eda37b4d30a254840036a136b81455e82bff0ab643d0c"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "mode": "100644",
+      "gitBlob": "67e2cd320b55a3db8ae56f17c35f4a2e7c2970e7",
+      "bytes": 84,
+      "sha256": "50a2180c3185015b3c5263ce352c72bd50384f2142358251d955841bfa0f2066"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "mode": "100644",
+      "gitBlob": "61e36849cf7cfa9f1f71b4a3964a4953e3e243d3",
+      "bytes": 94,
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "path": "public/blotcanvas-icon-192.png",
+      "mode": "100644",
+      "gitBlob": "2c636f72961f4a9e6d0e90a744002b66857af736",
+      "bytes": 8549,
+      "sha256": "4b689a3ba162d99af4e4e78e628418bdfd2bf94f618ce77e93b26edd12b5157e"
+    },
+    {
+      "path": "public/blotcanvas-icon-512.png",
+      "mode": "100644",
+      "gitBlob": "c67e96b152db9cb558992f0a3a7dff13e4459a44",
+      "bytes": 10189,
+      "sha256": "f679bde5cac7320135e04c5a602a84154f4cccdd996eb61a9a0bc1e958fb5218"
+    },
+    {
+      "path": "public/blotcanvas-icon.svg",
+      "mode": "100644",
+      "gitBlob": "bb4ddca517a927dff807716c988e1f31488a99ed",
+      "bytes": 427,
+      "sha256": "cc9815ae0013d807aaa8d3df0ac516fdced59bf1e97e0262fdf8a3c236435f3b"
+    },
+    {
+      "path": "public/demo/blotcanvas-demo.gif",
+      "mode": "100644",
+      "gitBlob": "67b65f2ab60c12faf289e92f166192dfc06841ca",
+      "bytes": 134901,
+      "sha256": "aa36149b0ba8b7a029c287ef5768e642e1b8089a8bea01ef7fdd56a1f1508001"
+    },
+    {
+      "path": "public/demo/blotcanvas-og.png",
+      "mode": "100644",
+      "gitBlob": "67d646e39d16fdba3c006e28abc2623b2b63bee2",
+      "bytes": 58333,
+      "sha256": "2d3cb2cc400b3514601e9ec2541ae740a96d91309a8a39b76822987bfd36cdf1"
+    },
+    {
+      "path": "public/favicon.svg",
+      "mode": "100644",
+      "gitBlob": "ca747cb66b233fedec5ff0c84f97bb4631c05dbf",
+      "bytes": 712,
+      "sha256": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7"
+    },
+    {
+      "path": "public/file.svg",
+      "mode": "100644",
+      "gitBlob": "004145cddf3f9db91b57b9cb596683c8eb420862",
+      "bytes": 391,
+      "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4"
+    },
+    {
+      "path": "public/fonts/NotoSansMath-Regular.ttf",
+      "mode": "100644",
+      "gitBlob": "afd71307569ea9b84e4a2523fb0b4864e144a3c8",
+      "bytes": 373992,
+      "sha256": "ff5e5e7638e05bf7bc159d8801a28a40eddf76c155bec4fee53150babd795e1a"
+    },
+    {
+      "path": "public/fonts/OFL.txt",
+      "mode": "100644",
+      "gitBlob": "c82d72e422e2d08c5ab439b6bac7c2177ea0c565",
+      "bytes": 4377,
+      "sha256": "0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb"
+    },
+    {
+      "path": "public/globe.svg",
+      "mode": "100644",
+      "gitBlob": "567f17b0d7c7fb662c16d4357dd74830caf2dccb",
+      "bytes": 1035,
+      "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf"
+    },
+    {
+      "path": "public/manifest.webmanifest",
+      "mode": "100644",
+      "gitBlob": "e19596a79d3a59757999e4e73fbc28f23959b586",
+      "bytes": 694,
+      "sha256": "eb13d10c649871f290da3c31526775c57b7bc4776f64436ab05942c352b1e07a"
+    },
+    {
+      "path": "public/manual-en.html",
+      "mode": "100644",
+      "gitBlob": "594ed5341a5d930b5f59e63b176179adc9f7be53",
+      "bytes": 8221,
+      "sha256": "891cc39890fff8fbc7cce04cc21ec15f764cb6888ae864f90abcb462a4253f56"
+    },
+    {
+      "path": "public/manual.html",
+      "mode": "100644",
+      "gitBlob": "306cdd779b003726fb93f6be2e5e67f6fc653a8b",
+      "bytes": 23605,
+      "sha256": "584915f456940499a78d0f436f579ae5db9292f52813f956386313b90596a772"
+    },
+    {
+      "path": "public/robots.txt",
+      "mode": "100644",
+      "gitBlob": "1733e2025bb1fc81970ac1237e54305f5c1b7a0e",
+      "bytes": 83,
+      "sha256": "a99ed0f5618c1465c0ff5f495f2615be5d2a7f1eba0d791677627dd29abbc3ff"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "mode": "100644",
+      "gitBlob": "2673fe65ab807c0608699d24d144a0100cc7bb36",
+      "bytes": 545,
+      "sha256": "5645017a96d453c5e0667e4f7e7d22384ec03aa546fb439c9ffb38399f707ad6"
+    },
+    {
+      "path": "public/sw.js",
+      "mode": "100644",
+      "gitBlob": "4780059a6a176aeb4b96e9309441f3f4cda55769",
+      "bytes": 1747,
+      "sha256": "6210f14ec8cf8c12e478909ecc0a6c0f5515c1581fc54162adfb0738021bb6ca"
+    },
+    {
+      "path": "public/window.svg",
+      "mode": "100644",
+      "gitBlob": "b2b2a44f6ebc70c450043c05a002e7a93ba5d651",
+      "bytes": 385,
+      "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1"
+    },
+    {
+      "path": "scripts/create-demo-gif.sh",
+      "mode": "100755",
+      "gitBlob": "4b101fc1a0e9a4b9afb4b24d6494ba54424cf423",
+      "bytes": 5628,
+      "sha256": "a13a1a65970484f6540776b2cf081c1d82d6010e9f691e1b4935003ab864b4fe"
+    },
+    {
+      "path": "tests/condition-grid.test.ts",
+      "mode": "100644",
+      "gitBlob": "9f755255d345b5442150cbb3b913dc6031d694a3",
+      "bytes": 4455,
+      "sha256": "a2080e2664c3b12bf5c47b816aa27ed49d04a537a930b402edff9d999e01c225"
+    },
+    {
+      "path": "tests/display-adjustment.test.ts",
+      "mode": "100644",
+      "gitBlob": "e6615868f9a0d0fc44b1fa59b0dae7815eb86723",
+      "bytes": 1425,
+      "sha256": "93ac16caefc7b67f21f61d7fd3881eee6249317e5a412dffa2bdf05a8ff1959e"
+    },
+    {
+      "path": "tests/download-blob.test.ts",
+      "mode": "100644",
+      "gitBlob": "2fe3384b5d42403c996c53758c6caec59b4af39f",
+      "bytes": 3426,
+      "sha256": "6e12a50751e4cff624763028f57d21c6a629f9c70c21a0790e95e357b9b66631"
+    },
+    {
+      "path": "tests/figure-label-regression.test.ts",
+      "mode": "100644",
+      "gitBlob": "edeb4785aeaf22df7f4951b2fcda877387c91cd6",
+      "bytes": 2944,
+      "sha256": "4d40d33fa66acfd23c424bd947514c7c2cc126245f34ede85ba8d5e75aaaa8d1"
+    },
+    {
+      "path": "tests/figure-layout.test.ts",
+      "mode": "100644",
+      "gitBlob": "2b3ac37a64790d2a82f3c390f19f70f78f31ec11",
+      "bytes": 3722,
+      "sha256": "7e69c1fb315d436041a5ad21a3ca962089570fd384318c9e43ee1e0cd698ddfb"
+    },
+    {
+      "path": "tests/gel-geometry.test.ts",
+      "mode": "100644",
+      "gitBlob": "a085817b3bd257b6daccbfb1fb6c94462ec9bedb",
+      "bytes": 822,
+      "sha256": "369fe44475dc2cfec88c3adea1a2ade4dc62afb0e0d0e2f448a5991622b1145e"
+    },
+    {
+      "path": "tests/label-layout.test.ts",
+      "mode": "100644",
+      "gitBlob": "018f5071583ce0c90b3b122c3123bd54d14c75b2",
+      "bytes": 1270,
+      "sha256": "ded3b62bda4334b816aef1db48d570912f4219d050cd78b04b84eb5e91f6303a"
+    },
+    {
+      "path": "tests/project-storage.test.ts",
+      "mode": "100644",
+      "gitBlob": "414c502fc2f66bf63a73fc8e8906368c76ec5b6a",
+      "bytes": 4344,
+      "sha256": "555992e29ba49448157349fea4ecb45ac0c16c16ee4c292a218e7f07d59cac9c"
+    },
+    {
+      "path": "tests/region-order.test.ts",
+      "mode": "100644",
+      "gitBlob": "cc999cb0f470904fd354f7efc34f829c8a09cf18",
+      "bytes": 1232,
+      "sha256": "95eb643f9b10a0b7582c67cab72d2114343699b0c4453984a2bc02f0a8368d37"
+    },
+    {
+      "path": "tests/rendered-html.test.mjs",
+      "mode": "100644",
+      "gitBlob": "b3e0d49801e9a99db541d21b7b3ca2e70e7970a3",
+      "bytes": 3460,
+      "sha256": "616d413b4845831d588a1e72e04262629432ddb9fafa2b5fecd03f1092245d50"
+    },
+    {
+      "path": "tsconfig.app.json",
+      "mode": "100644",
+      "gitBlob": "24494649fef42ab7582373a721adb2a2a7f87221",
+      "bytes": 332,
+      "sha256": "06f27f0cc3af10f15c635f5ea4d07121deb0cc4027e3938e45b45056055cbf61"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "gitBlob": "470837e9234929c72485f6b6dabed7abac34ac79",
+      "bytes": 706,
+      "sha256": "72ed3722a65e2242200f164aaed26b046901f134660bf81d64464ea73a37b4a8"
+    },
+    {
+      "path": "vite.config.ts",
+      "mode": "100644",
+      "gitBlob": "ae08f93676d3ba1a026104ec8774505bf8d6725e",
+      "bytes": 1697,
+      "sha256": "f7c14b8a38546bb6a7ec93cba22f8e8f131da9fbfe8b39327422ed5bb98d4613"
+    },
+    {
+      "path": "vite.github-pages.config.ts",
+      "mode": "100644",
+      "gitBlob": "8dad4b97a6b5b3326c08772ccd460812a7bf1ad6",
+      "bytes": 278,
+      "sha256": "6c2189296dd020813014e0f459bf399cc66b58f644a21c10921e5fa8c5fabc4e"
+    },
+    {
+      "path": "worker/index.ts",
+      "mode": "100644",
+      "gitBlob": "b3cd137862c517c1053481cf6efdf6dd4d423cdc",
+      "bytes": 1731,
+      "sha256": "2ed36d7fa996e946d9d7695c5925e7760246f6bf8fa35c06f1bc515c087dc450"
+    }
+  ],
+  "historicalSafariFiles": [
+    {
+      "name": "public-safari-save-release.mjs",
+      "bytes": 3747,
+      "sha256": "56b58a8df1b9eaa91b44ba96a040c9319c63c436b24a60ca5eda44160fdc97b0"
+    },
+    {
+      "name": "verify-public-safari-save.mjs",
+      "bytes": 1477,
+      "sha256": "80a59e93261134fe99019b6cd6891513b5627c804d69eac0ad37e8da0b42bd06"
+    },
+    {
+      "name": "public-safari-save-verification-20260918.json",
+      "bytes": 1319,
+      "sha256": "253f39e97e248336185dbfac830459a1914563ec430467dec235f1fb67b5d04e"
+    }
+  ]
+}

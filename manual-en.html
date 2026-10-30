@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="English guide to importing, rotating, cropping, labeling, exporting, and preliminarily quantifying Western blot images with BlotCanvas.">
   <link rel="canonical" href="https://bonnginn.github.io/blotcanvas/manual-en.html">
-  <title>BlotCanvas Beta — User guide</title>
+  <link rel="alternate" hreflang="ja" href="https://bonnginn.github.io/blotcanvas/manual.html">
+  <link rel="alternate" hreflang="en" href="https://bonnginn.github.io/blotcanvas/manual-en.html">
+  <title>Prepare Western blot figures for publication | BlotCanvas guide</title>
   <style>
-    :root{font-family:Helvetica,Arial,sans-serif;color:#17211e;background:#f3f6f5}*{box-sizing:border-box}body{margin:0}header{background:#183f35;color:#fff;padding:28px 6vw}header h1{margin:0 0 8px;font-size:30px}header p{margin:0;color:#d9ece6}.wrap{max-width:980px;margin:auto;padding:28px 20px 60px}nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}nav a,.lang{padding:8px 11px;border:1px solid #a8bbb5;border-radius:7px;background:#fff;color:#174f40;text-decoration:none;font-weight:700}section{margin:16px 0;padding:22px 24px;background:#fff;border:1px solid #d8e1de;border-radius:12px;box-shadow:0 4px 16px #183f350a}h2{margin-top:0;color:#174f40;font-size:21px}li{margin:7px 0;line-height:1.55}.note{padding:12px 14px;border-left:4px solid #d38c2d;background:#fff7e9}.small{color:#53645f;font-size:14px;line-height:1.55}code{background:#edf2f0;padding:2px 5px;border-radius:4px}@media(max-width:640px){header{padding:22px 18px}.wrap{padding:18px 12px}section{padding:18px}}
+    :root{font-family:Helvetica,Arial,sans-serif;color:#17211e;background:#f3f6f5}*{box-sizing:border-box}body{margin:0}header{background:#183f35;color:#fff;padding:28px 6vw}header h1{margin:0 0 8px;font-size:30px}header p{margin:0;color:#d9ece6}.wrap{max-width:980px;margin:auto;padding:28px 20px 60px}nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}nav a,.lang{display:inline-block;margin:4px 0;padding:8px 11px;border:1px solid #a8bbb5;border-radius:7px;background:#fff;color:#174f40;text-decoration:none;font-weight:700}section{margin:16px 0;padding:22px 24px;background:#fff;border:1px solid #d8e1de;border-radius:12px;box-shadow:0 4px 16px #183f350a}h2{margin-top:0;color:#174f40;font-size:21px}li{margin:7px 0;line-height:1.55}.note{padding:12px 14px;border-left:4px solid #d38c2d;background:#fff7e9}.small{color:#53645f;font-size:14px;line-height:1.55}code{background:#edf2f0;padding:2px 5px;border-radius:4px}@media(max-width:640px){header{padding:22px 18px}.wrap{padding:18px 12px}section{padding:18px}}
   </style>
 </head>
 <body>
   <header>
-    <h1>BlotCanvas Beta — Getting started</h1>
-    <p>Prepare editable Western blot figures, source records, and preliminary quantification locally in your browser.</p>
+    <h1>Prepare Western blot figures with BlotCanvas</h1>
+    <p>From image import and cropping to labels and editable PDF export: a guide to the free BlotCanvas browser app (Public Beta), source records, and preliminary quantification.</p>
   </header>
   <div class="wrap">
-    <p><a class="lang" href="./manual.html">日本語マニュアル</a> <a class="lang" href="./?lang=en">Open English app</a></p>
+    <p><a class="lang" href="./manual.html">日本語マニュアル</a> <a class="lang" href="./?lang=en">Open English app</a> <a class="lang" href="https://bonnginn.github.io/plot-and-blot/#english">About Plot &amp; Blot</a></p>
     <figure style="margin:0 0 22px"><img src="demo/blotcanvas-demo.gif" alt="BlotCanvas workflow from image import to figure export" style="display:block;width:100%;height:auto;border:1px solid #d8e1de;border-radius:12px"><figcaption class="small" style="margin-top:8px;text-align:center">Import images, define crops, place molecular-weight markers, edit lane labels, and export the figure.</figcaption></figure>
     <nav>
       <a href="#s1">1 Import</a><a href="#s2">2 Rotation</a><a href="#s3">3 Regions</a>

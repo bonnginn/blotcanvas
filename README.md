@@ -1,3 +1,5 @@
+[紹介ページ（日本語）](https://bonnginn.github.io/blotcanvas/about.html) | [Full English introduction](https://bonnginn.github.io/blotcanvas/about-en.html)
+
 # BlotCanvas
 
 Western blot（ウェスタンブロット）画像から、論文・学会発表用のFigure、元画像記録、簡易定量結果を作成する無料のブラウザアプリです。画像はサーバーへ送信せず、端末のブラウザ内で処理します。

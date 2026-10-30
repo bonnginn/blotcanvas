@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BlotCanvas｜無料Western blot図作成・元画像記録</title>
+<meta name="description" content="Western blot画像の読み込み、クロップ、ラベル配置、編集可能PDF、元画像記録と簡易定量。無料ブラウザアプリBlotCanvasの機能とBeta版の制限。" />
+<link rel="canonical" href="https://bonnginn.github.io/blotcanvas/about.html" />
+<link rel="alternate" hreflang="ja" href="https://bonnginn.github.io/blotcanvas/about.html" />
+<link rel="alternate" hreflang="en" href="https://bonnginn.github.io/blotcanvas/about-en.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="BlotCanvas｜無料Western blot図作成・元画像記録" />
+<meta property="og:description" content="Western blot画像の読み込み、クロップ、ラベル配置、編集可能PDF、元画像記録と簡易定量。無料ブラウザアプリBlotCanvasの機能とBeta版の制限。" />
+<meta property="og:url" content="https://bonnginn.github.io/blotcanvas/about.html" />
+<style>
+      :root { color-scheme: light; --ink:#17231f; --muted:#52635d; --green:#174b43; --pale:#edf5f2; --line:#cbd8d3; }
+      * { box-sizing:border-box; }
+      body { margin:0; color:var(--ink); background:#f7faf9; font-family:Helvetica,Arial,"Noto Sans JP",sans-serif; line-height:1.7; font-size:17px; }
+      header { color:white; background:linear-gradient(135deg,#123f38,#247366); padding:38px 22px; }
+      header div, main { max-width:900px; margin:auto; }
+      h1 { margin:0 0 8px; font-size:clamp(28px,5vw,42px); }
+      header p { margin:0; color:#e5f4ef; }
+      main { padding:30px 20px 70px; }
+      .notice,.example { border:1px solid var(--line); border-radius:12px; background:white; padding:18px 20px; margin:0 0 24px; }
+      .notice { border-left:6px solid var(--green); }
+      nav { display:flex; flex-wrap:wrap; gap:8px; margin:22px 0 28px; }
+      nav a,.back { color:var(--green); background:white; border:1px solid var(--line); border-radius:999px; padding:7px 13px; text-decoration:none; font-weight:700; }
+      section { background:white; border:1px solid #dce5e1; border-radius:14px; padding:22px; margin:15px 0; box-shadow:0 2px 10px rgba(20,55,45,.04); }
+      h2 { color:var(--green); font-size:22px; margin:0 0 9px; }
+      h3 { margin:25px 0 8px; }
+      p { margin:8px 0; }
+      ul { padding-left:1.3em; }
+      table { border-collapse:collapse; width:100%; margin:12px 0; font-size:15px; }
+      th,td { padding:8px; border-bottom:1px solid var(--line); text-align:center; white-space:nowrap; }
+      th:first-child { text-align:left; }
+      .chips { display:flex; flex-wrap:wrap; gap:8px; }
+      .chip { background:var(--pale); border-radius:8px; padding:4px 9px; font-weight:700; }
+      .flow { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:15px; }
+      .flow div { background:var(--pale); padding:15px; border-radius:10px; text-align:center; font-weight:700; }
+      .small { color:var(--muted); font-size:14px; }
+      .manual-figure { margin:18px 0 6px; padding:14px; border:1px solid var(--line); border-radius:12px; background:#f8fbfa; overflow-x:auto; }
+      .manual-figure svg { display:block; width:100%; min-width:560px; height:auto; }
+      .manual-figure figcaption { margin-top:9px; color:var(--muted); font-size:14px; text-align:center; }
+      footer { border-top:1px solid var(--line); margin-top:34px; padding-top:22px; color:var(--muted); }
+      @media (max-width:650px) { body{font-size:16px}.flow{grid-template-columns:1fr} section{padding:18px 16px}.table-wrap{overflow-x:auto} }
+    </style>
+</head>
+<body>
+<header><div><h1>BlotCanvas｜無料Western blot図作成・元画像記録</h1><p>Public Beta · Browser · MIT License</p></div></header>
+<main><nav aria-label="関連ページ"><a href="about.html" lang="ja" hreflang="ja">日本語</a> <a href="about-en.html" lang="en" hreflang="en">English</a> <a href="manual.html">使い方</a> </nav><section><h2>Western blot画像から図と元画像記録を作る</h2><p>BlotCanvasは、Western blot画像から論文・学会発表用の図、元画像記録、簡易定量を作成する無料のブラウザアプリです。画像はブラウザ内で処理し、アプリケーションサーバーへ送信しません。MIT Licenseで公開しているPublic Betaです。</p></section><section><h2>画像の読み込みから保存まで</h2><ol><li>撮影ファイルを読み込み、Signal・Merge・Markerの役割を確認します。</li><li>ゲルごとに水平補正し、領域を切り出して分子量マーカーとレーン条件ラベルを配置します。</li><li>Figureを確認し、編集可能PDFやPNG／TIFF／JPEG／PDF、元画像と切り出し位置を示すSource record、軽量プロジェクトJSONを保存します。</li><li>必要な場合だけバンド・背景ROIを置いて簡易定量し、グラフや測定CSVを書き出します。</li></ol><figure class="manual-figure"><img src="demo/blotcanvas-demo.gif" alt="BlotCanvasの画像読み込み、クロップ、ラベル配置、図の出力を示す公開デモ" style="display:block;width:100%;height:auto" /><figcaption>公開済みの操作デモ。画像の読み込みから図の出力までの実画面です。</figcaption></figure></section><section><h2>元画像と表示調整を区別する</h2><p>元画像は別の場所にも保管してください。同じ抗体を比較する画像には同じ表示調整値を使用し、処理履歴を保管します。Figure用の反転・明るさ・コントラストは表示用であり、定量値は調整前の元画像から計算します。</p><p>プロジェクトJSONに画像本体は含まれません。再開時はJSONを開き、元画像フォルダを選択して再リンクします。</p></section><section><h2>Beta版の制限</h2><p>最新版Chrome／Edgeを推奨します。簡易定量は矩形ROIによるベータ機能です。論文等に使用する前に、同一画像・同一ROIでImageJ等の既存手法と照合してください。統計処理と独立したbiological replicateの集約は現在の対象外です。</p><p>所属機関・投稿先学術誌・研究公正の規程に従ってください。不具合報告には、元画像、未公開データ、個人情報、患者情報等の機密情報を送らないでください。</p></section><section><h2>使い始める</h2><p><a href="./">BlotCanvasを開く（日本語）</a> · <a href="manual.html">図解付きの使い方と注意事項</a> · <a href="https://github.com/bonnginn/blotcanvas">ソース・ドキュメント</a></p><p><a href="https://bonnginn.github.io/plot-and-blot/">Plot &amp; Blot総合紹介</a> · <a href="https://bonnginn.github.io/biofigurestat/">統計解析・グラフ作成のBioFigureStat</a></p></section></main>
+</body>
+</html>

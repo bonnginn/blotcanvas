@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BlotCanvas | Free Western blot figures and source records</title>
+<meta name="description" content="Import, crop and label Western blot images, export editable PDFs, retain source records and perform preliminary quantification. Features and Beta limitations of the free BlotCanvas browser app." />
+<link rel="canonical" href="https://bonnginn.github.io/blotcanvas/about-en.html" />
+<link rel="alternate" hreflang="ja" href="https://bonnginn.github.io/blotcanvas/about.html" />
+<link rel="alternate" hreflang="en" href="https://bonnginn.github.io/blotcanvas/about-en.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="BlotCanvas | Free Western blot figures and source records" />
+<meta property="og:description" content="Import, crop and label Western blot images, export editable PDFs, retain source records and perform preliminary quantification. Features and Beta limitations of the free BlotCanvas browser app." />
+<meta property="og:url" content="https://bonnginn.github.io/blotcanvas/about-en.html" />
+<style>
+      :root { color-scheme: light; --ink:#17231f; --muted:#52635d; --green:#174b43; --pale:#edf5f2; --line:#cbd8d3; }
+      * { box-sizing:border-box; }
+      body { margin:0; color:var(--ink); background:#f7faf9; font-family:Helvetica,Arial,"Noto Sans JP",sans-serif; line-height:1.7; font-size:17px; }
+      header { color:white; background:linear-gradient(135deg,#123f38,#247366); padding:38px 22px; }
+      header div, main { max-width:900px; margin:auto; }
+      h1 { margin:0 0 8px; font-size:clamp(28px,5vw,42px); }
+      header p { margin:0; color:#e5f4ef; }
+      main { padding:30px 20px 70px; }
+      .notice,.example { border:1px solid var(--line); border-radius:12px; background:white; padding:18px 20px; margin:0 0 24px; }
+      .notice { border-left:6px solid var(--green); }
+      nav { display:flex; flex-wrap:wrap; gap:8px; margin:22px 0 28px; }
+      nav a,.back { color:var(--green); background:white; border:1px solid var(--line); border-radius:999px; padding:7px 13px; text-decoration:none; font-weight:700; }
+      section { background:white; border:1px solid #dce5e1; border-radius:14px; padding:22px; margin:15px 0; box-shadow:0 2px 10px rgba(20,55,45,.04); }
+      h2 { color:var(--green); font-size:22px; margin:0 0 9px; }
+      h3 { margin:25px 0 8px; }
+      p { margin:8px 0; }
+      ul { padding-left:1.3em; }
+      table { border-collapse:collapse; width:100%; margin:12px 0; font-size:15px; }
+      th,td { padding:8px; border-bottom:1px solid var(--line); text-align:center; white-space:nowrap; }
+      th:first-child { text-align:left; }
+      .chips { display:flex; flex-wrap:wrap; gap:8px; }
+      .chip { background:var(--pale); border-radius:8px; padding:4px 9px; font-weight:700; }
+      .flow { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:15px; }
+      .flow div { background:var(--pale); padding:15px; border-radius:10px; text-align:center; font-weight:700; }
+      .small { color:var(--muted); font-size:14px; }
+      .manual-figure { margin:18px 0 6px; padding:14px; border:1px solid var(--line); border-radius:12px; background:#f8fbfa; overflow-x:auto; }
+      .manual-figure svg { display:block; width:100%; min-width:560px; height:auto; }
+      .manual-figure figcaption { margin-top:9px; color:var(--muted); font-size:14px; text-align:center; }
+      footer { border-top:1px solid var(--line); margin-top:34px; padding-top:22px; color:var(--muted); }
+      @media (max-width:650px) { body{font-size:16px}.flow{grid-template-columns:1fr} section{padding:18px 16px}.table-wrap{overflow-x:auto} }
+    </style>
+</head>
+<body>
+<header><div><h1>BlotCanvas | Free Western blot figures and source records</h1><p>Public Beta · Browser · MIT License</p></div></header>
+<main><nav aria-label="Related pages"><a href="about.html" lang="ja" hreflang="ja">日本語</a> <a href="about-en.html" lang="en" hreflang="en">English</a> <a href="manual-en.html">User guide</a> </nav><section><h2>Prepare Western blot figures and source records</h2><p>BlotCanvas is a free browser application for preparing publication and presentation figures, source-image records and preliminary quantification from Western blot images. Images are processed in your browser and are not sent to an application server. It is Public Beta software released under the MIT License.</p></section><section><h2>From image import to saved output</h2><ol><li>Import acquisition files and confirm the Signal, Merge and Marker roles.</li><li>Correct rotation for each gel, define crop regions, and place molecular-weight markers and lane-condition labels.</li><li>Review the figure and save an editable PDF or PNG / TIFF / JPEG / PDF, a Source record showing original images and crop positions, and a lightweight project JSON.</li><li>Only when needed, place band and background ROIs for preliminary quantification and export graphs or measurement CSV.</li></ol><figure class="manual-figure"><img src="demo/blotcanvas-demo.gif" alt="Public BlotCanvas demo showing image import, cropping, label placement and figure export" style="display:block;width:100%;height:auto" /><figcaption>Previously published workflow demo showing actual screens from image import to figure export.</figcaption></figure></section><section><h2>Keep original images separate from display adjustments</h2><p>Keep an independent backup of original images. Use the same display adjustments for comparable images probed with the same antibody, and retain the processing history. Figure inversion, brightness and contrast affect display only; quantitative values are calculated from the original image before display adjustment.</p><p>Project JSON does not embed the images. To resume, open the JSON and choose the source-image folder to relink.</p></section><section><h2>Beta limitations</h2><p>Use a current version of Chrome or Edge. Preliminary quantification is a beta rectangular-ROI method. Before using results in publications, validate the same image and ROIs against ImageJ or another established method. Statistical analysis and aggregation of independent biological replicates are outside the current scope.</p><p>Follow institutional, journal and research-integrity rules. Do not send original images, unpublished data, personal or patient information, or other confidential information in problem reports.</p></section><section><h2>Get started</h2><p><a href="./?lang=en">Open BlotCanvas in English</a> · <a href="manual-en.html">Illustrated workflow and cautions</a> · <a href="https://github.com/bonnginn/blotcanvas">Source and documentation</a></p><p><a href="https://bonnginn.github.io/plot-and-blot/en.html">About Plot &amp; Blot</a> · <a href="https://bonnginn.github.io/biofigurestat/en.html">BioFigureStat for statistics and graphing</a></p></section></main>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const CACHE = "blotcanvas-app-v19-safari-save-20260918";
+const CACHE = "blotcanvas-app-v20-folder-import-20261106";
 const BASE = self.registration.scope;
 const APP_FILES = [
   "./",

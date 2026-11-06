@@ -1,5 +1,12 @@
 # BlotCanvas バージョン履歴
 
+## 2026-11-06 — Folder import metadata hotfix
+
+- Ignore macOS AppleDouble (`._*`) and `__MACOSX` metadata files during image/folder import and source-image relinking. These files retain image extensions but contain no image pixels.
+- Keep the current published application, image decoding, quantification, layout, and exports unchanged.
+- Update the entry asset and application cache version so existing installations receive the fix.
+
+
 このファイルには、公開版における主な変更を記録します。
 
 ## 0.2.19-beta.1 — 2026-09-03
